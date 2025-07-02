@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+pydantic
+requests
+python-dotenv
+openai
+python-jose
+passlib[bcrypt]
