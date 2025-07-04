@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    command: serve
+    environment:
+      - OLLAMA_MODELS=llama2
+
+volumes:
+  ollama-data:
